@@ -1,6 +1,6 @@
 const birthday = new Date("November 14, 2026 00:00:00").getTime();
 
-const timer = setInterval(function () {
+const timer = setInterval(() => {
 
     const now = new Date().getTime();
     const distance = birthday - now;
@@ -15,13 +15,13 @@ const timer = setInterval(function () {
     document.getElementById("minutes").innerHTML = minutes;
     document.getElementById("seconds").innerHTML = seconds;
 
-    if (distance < 0) {
+    if(distance < 0){
         clearInterval(timer);
 
-        document.querySelector(".countdown").innerHTML = "";
+        document.querySelector(".countdown").style.display = "none";
 
         document.getElementById("message").innerHTML =
-        "🎂 Happy Birthday Fouizya ❤️<br><br>May Allah bless you with happiness, success, peace and endless smiles. Stay happy and keep shining always! ✨🌹";
+        "🎉 Happy Birthday Fouizya ❤️<br><br>May Allah fill your life with happiness, success, good health and countless beautiful moments. Stay blessed and keep smiling always! 🌹✨";
     }
 
 }, 1000);
