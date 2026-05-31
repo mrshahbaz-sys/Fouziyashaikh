@@ -1,6 +1,6 @@
 const birthday = new Date("November 14, 2026 00:00:00").getTime();
 
-const timer = setInterval(() => {
+const timer = setInterval(function(){
 
     const now = new Date().getTime();
     const distance = birthday - now;
@@ -21,7 +21,7 @@ const timer = setInterval(() => {
         document.querySelector(".countdown").style.display = "none";
 
         document.getElementById("message").innerHTML =
-        "🎉 Happy Birthday Fouizya ❤️<br><br>May Allah fill your life with happiness, success, good health and countless beautiful moments. Stay blessed and keep smiling always! 🌹✨";
+        "🎂 Happy Birthday Fouizya ❤️<br><br>May Allah bless you with happiness, success, good health and endless smiles. Stay happy always princess! 🌹✨";
     }
 
-}, 1000);
+},1000);
